@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CocoTheCat-AI</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='Images/cocoAI-logo-removebg-preview.png') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='Images/cocoAI-logo-removebg-preview.png') }}" alt="logo">
+        </div>
+
+        <h1>CocoTheCat-AI</h1>
+    </header>
+
+
+    <main>
+
+        <div class="messages" id="messages">
+            <div class="welcome-banner" id="welcome-banner">
+
+                <div class="welcome-image">
+                    <img src="{{ url_for('static', filename='Images/welcomeBanner.png') }}" alt="Coco AI">
+                </div>
+            
+                <h2>COCO AI</h2>
+            
+                <p>Meet your new feline source of wisdom. </p>
+            
+            </div>
+        </div>
+
+
+        <div class="input-container">
+
+            <input
+                id="input"
+                type="text"
+                placeholder="Ask the wise Coco anything"
+                autocomplete="off"
+            >
+
+            <button id="send-button">
+                <span>➤</span>
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-logo">
+            <img src="{{ url_for('static', filename='Images/cocoAI-logo-removebg-preview.png') }}" alt="Logo">
+        </div>
+
+        <div class="footer-right">
+            CTC-1.0 by Artems AI
+        </div>
+
+        <div class="copyright">
+            Copyright 2026
+        </div>
+
+    </footer>
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
